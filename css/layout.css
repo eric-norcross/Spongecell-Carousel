@@ -1,0 +1,61 @@
+#layouts {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  border-width: 0px;
+  border-color: red;
+  border-style: solid;
+}
+
+.layout {
+  width: 300px;
+  height: 250px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.item {
+  position: absolute;
+}
+
+#foreground {
+  position: absolute;
+  z-index: 10;
+}
+
+.button {
+  display: inline-block;
+  padding: 0px;
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.arrow {
+  position: absolute;
+  z-index: 5;
+  padding: 115px 0px 0px 5px;
+  font-size: 18px;
+  color: #000;
+  /*-webkit-text-stroke: 1.25px #FFF;
+    -webkit-text-fill-color: #000*/
+}
+
+.bg {
+  position: absolute;
+  background-color: rgba(0,0,0,0.3);
+  min-width: 28px;
+  max-width: 28px;
+  min-height: 250px;
+  max-height: 250px;
+  z-index: 4;
+}
+
+#previous {
+}
+
+#next {
+  left: 272px;
+}

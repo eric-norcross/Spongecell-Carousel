@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Carousel</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Eric Norcross">
+	<link rel="stylesheet" href="css/master.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<script>"use strict"</script>
+	<script type="text/javascript" src="src/uncompressed/plugins/CSSPlugin.js"></script>
+	<script type="text/javascript" src="src/uncompressed/TweenLite.js"></script>
+	<script src="utilities/Utilities.js"></script>
+	<script src="utilities/transitions/TransitionManagerSettings.js"></script>
+	<script src="utilities/transitions/TransitionManager.js"></script>
+	<script src="CustomEvent.js"></script>
+	<script src="Button.js"></script>
+	<script src="Item.js"></script>
+	<script src="Layout.js"></script>
+	<script src="Carousel.js"></script>
+	
+	<!-- Date: 2012-08-24 -->
+</head>
+<body>
+  
+  <div id="carousel">
+    <div id="foreground">
+      <div id="nav">
+        <!--<div id="previous" class="button">
+            <div class="arrow">&#x25C4;</div>
+            <div class="bg"></div>
+        </div>
+        <div id="next" class="button">
+          <div class="arrow">&#x25BA;</div>
+          <div class="bg"></div>
+        </div>-->
+      </div>
+    </div>
+    <div id="layouts">
+      <!--<div id="default" class="layout"></div>-->
+    </div>
+  </div>
+  
+  <script>
+    var carousel = new Carousel();
+    carousel.init();
+  </script>
+</body>
+</html>
