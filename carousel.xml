@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+  <item id="14">
+    <layout>Default</layout>
+    <track>1</track>
+    <title>Title 1</title>
+    <link>[clickTag1]</link>
+    <image size="Rectangle" href="[clickTag3]">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1588/1_300x250.jpg</image>
+    <thumbnail>http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1593/1_300x250.jpg</thumbnail>
+    <tip>Tool Tip Text 1</tip>
+    <tipLink>[clickTag2]</tipLink>
+    <dynamicText1>MY DYNAMIC &lt;a href="[clickTag3]"&gt;TEXT&lt;/a&gt; 1</dynamicText1>
+    <buttonOne>[clickTag4]</buttonOne>
+    <image size="Skyscraper">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1589/1_160x600.jpg</image>
+    <image size="Leaderboard">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1590/1_728x90.jpg</image>
+    <image size="InStream">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1591/1_400x280.jpg</image>
+    <image size="300x600">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1592/1_300x600.jpg</image>
+  </item>
+  <item id="5125">
+    <layout>Default</layout>
+    <track>2</track>
+    <title>Title 2</title>
+    <link>[clickTag2]</link>
+    <image size="Rectangle" href="[clickTag3]">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1594/2_300x250.jpg</image>
+    <thumbnail>http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1595/2_300x250.jpg</thumbnail>
+    <tip>Tool Tip Text 2</tip>
+    <tipLink>[clickTag2]</tipLink>
+    <dynamicText1>My Dynamic &lt;a href=[clickTag3]"&gt;Text&lt;/a&gt; 2</dynamicText1>
+    <buttonOne>[clickTag2]</buttonOne>
+    <image size="Skyscraper">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1596/2_160x600.jpg</image>
+    <image size="Leaderboard">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1597/2_728x90.jpg</image>
+    <image size="InStream">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1598/2_400x280.jpg</image>
+    <image size="300x600">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1599/2_300x600.jpg</image>
+  </item>
+  <item id="6492">
+    <layout>Default</layout>
+    <track>3</track>
+    <title>Title 3</title>
+    <link>[clickTag3]</link>
+    <image size="Rectangle" href="[clickTag3]">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1600/3_300x250.jpg</image>
+    <thumbnail>http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1611/3_300x250.jpg</thumbnail>
+    <tip>Tool Tip Text 3</tip>
+    <tipLink>[clickTag3]</tipLink>
+    <dynamicText1>Text 3</dynamicText1>
+    <buttonOne>[clickTag3]</buttonOne>
+    <image size="Skyscraper">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1601/3_160x600.jpg</image>
+    <image size="Leaderboard">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1602/3_728x90.jpg</image>
+    <image size="InStream">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1603/3_400x280.jpg</image>
+    <image size="300x600">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1604/3_300x600.jpg</image>
+  </item>
+  <item id="6493">
+    <layout>Default</layout>
+    <track>4</track>
+    <title>Title 4</title>
+    <link>[clickTag4]</link>
+    <image size="Rectangle" href="[clickTag3]">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1605/4_300x250.jpg</image>
+    <thumbnail>http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1606/4_300x250.jpg</thumbnail>
+    <tip>Tool Tip Text 4</tip>
+    <tipLink>[clickTag4]</tipLink>
+    <dynamicText1>Text 4</dynamicText1>
+    <buttonOne>[clickTag4]</buttonOne>
+    <image size="Skyscraper">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1607/4_160x600.jpg</image>
+    <image size="Leaderboard">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1608/4_728x90.jpg</image>
+    <image size="InStream">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1609/4_400x280.jpg</image>
+    <image size="300x600">http://cdn.signal.spongecell.com/campaigns/3829/signal_processors/6/images/1610/4_300x600.jpg</image>
+  </item>
+</items>

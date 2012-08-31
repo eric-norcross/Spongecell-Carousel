@@ -114,7 +114,6 @@ function TransitionManager(element, direction, settings, params) {
 
   		//SETS UP THE FADING IF THE "FADE" EFFECT IS ENABLED
   		if (_transitionSettings.effectTransitions && _transitionSettings.effectTransitions.fade) {
-  		  console.log("SETTING ALPHA TO 0")
   			_transitionAlpha = 0;
   		}
 

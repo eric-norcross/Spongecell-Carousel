@@ -1,5 +1,5 @@
 function Layout() {
-  console.log("Layout :: constructor");
+  //console.log("Layout :: constructor");
   
   //PUBLIC
   //=======================================================================================================================
@@ -11,30 +11,29 @@ function Layout() {
     layoutType:   null,
     
     init: function(dataObj, transitionSettings) {
-      console.log("Layout :: init");
+      //console.log("Layout :: init");
       _data = dataObj;
       _transitionSettings = transitionSettings;
       //console.log("Layout :: init :: _transitionSettings: " + _transitionSettings)
 
-      var layoutElement = document.createElement('div');
+      _element = document.createElement('div');
       //console.log("Layout :: init :: layoutType: " + this.layoutType)
-      layoutElement.id = this.layoutType;
+      _element.id = this.layoutType;
       //console.log("Layout :: init :: layoutElement: " + this.layoutElement)
-      document.getElementById("layouts").appendChild(layoutElement);
-      Utilities.addClass(layoutElement, ["layout"]);
+      document.getElementById("layouts").appendChild(_element);
+      Utilities.addClass(_element, ["layout"]);
     },
     
     addItem: function(dataObj) {
-      console.log("Layout :: addItem");
+      //console.log("Layout :: addItem");
 
   		var item = new Item();
   		this.items.push(item);
   		//console.log("Layout :: addItem :: items: " + this.items);
 
   		item.id = _itemCount;
-  		item.layoutType = this.layoutType;
   		item.init(dataObj);
-
+      
   		_itemCount++;
     },
 
@@ -61,7 +60,7 @@ function Layout() {
     },
 
     previousItem: function() {
-      console.log("Layout :: previousItem ");
+      //console.log("Layout :: previousItem ");
       this.prevItemId = this.curItemId;
 
   		if (this.curItemId > 0) {
@@ -74,7 +73,9 @@ function Layout() {
 
   		new TransitionManager(this.items[this.curItemId].element(), "in", _transitionSettings, {reverse:true});
   		new TransitionManager(this.items[this.prevItemId].element(), "out", _transitionSettings, {reverse:true});
-    }
+    },
+    
+    element: function() { return _element; } 
   }
   //=======================================================================================================================
   
@@ -83,11 +84,12 @@ function Layout() {
   //=======================================================================================================================
   var _data,
       _itemCount = 0,
-      _transitionSettings
+      _transitionSettings,
+      _element
   ;
   
   var setIndicies = function(elements) {
-    console.log("Layout :: setIndicies :: elements.length: " + elements.length)
+    //console.log("Layout :: setIndicies :: elements.length: " + elements.length)
 		for (var elementInt = 0; elementInt < elements.length; elementInt++) {
 			var element = elements[elementInt];
 			Utilities.modifyCSS(element, "zIndex", Utilities.getNextHighestZIndex());

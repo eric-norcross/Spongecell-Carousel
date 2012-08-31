@@ -1,5 +1,5 @@
 function Button() {
-  console.log("Button :: constructor");
+  //console.log("Button :: constructor");
   
   //private vars
   var _data,
@@ -9,13 +9,10 @@ function Button() {
   //private methods
   var clickHandler = function(event) {
     event.stopImmediatePropagation();
-    //console.log("Button :: clickHandler :: event.target.className: " + event.target.className);
-    //var customEvent = new CustomEvent("test", {}, true, true);
-    //console.log("Button :: clickHandler :: customEvent: " + customEvent);
-    
+
     var customEvent = document.createEvent("Event");
     customEvent.initEvent("Spongecell :: Carousel Event :: Click", true, true);
-    customEvent.customData = {};
+    customEvent.data = {};
     //console.log("Button :: clickHandler :: customEvent: " + customEvent);
     _element.dispatchEvent(customEvent);
   }
@@ -28,7 +25,7 @@ function Button() {
     
     //public methods
     init: function(dataObj) {
-      console.log("Button :: init");
+      //console.log("Button :: init");
       _data = dataObj;
 
       var button = document.createElement('div');

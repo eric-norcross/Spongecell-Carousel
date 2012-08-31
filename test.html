@@ -8,18 +8,7 @@
 	<link rel="stylesheet" href="css/master.css" />
 	<link rel="stylesheet" href="css/layout.css" />
 	<script>"use strict"</script>
-	<script type="text/javascript" src="src/minified/plugins/CSSPlugin.min.js"></script>
-	<script type="text/javascript" src="src/minified/TweenLite.min.js"></script>
-	<script src="utilities/Utilities.js"></script>
-	<script src="utilities/transitions/TransitionManagerSettings.js"></script>
-	<script src="utilities/transitions/TransitionManager.js"></script>
 	<script src="utilities/XMLParser.js"></script>
-	<script src="CustomEvent.js"></script>
-	<script src="Button.js"></script>
-	<script src="Item.js"></script>
-	<script src="Layout.js"></script>
-	<script src="Carousel.js"></script>
-	
 	<!-- Date: 2012-08-24 -->
 </head>
 <body>
@@ -43,11 +32,31 @@
   </div>
   
   <script>
-    var ENVIRONMENT     = "local";
-    var CAROUSEL_NAME   = "Carousel"
+    function xmlParser() {
+      var xmlhttp;
+      if (window.XMLHttpRequest) {
+        xmlhttp = new XMLHttpRequest();
+      } else {
+        // IE 5/6
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+      }
+
+      xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+          document.getElementById('p1').innerHTML = xmlhttp.getAllResponseHeaders();
+        }
+      }
+
+      //var xmlURL = "carousel.xml";
+      //var xmlURL = "http://signal.spongecell.com/campaigns/3829/signal_processors/6/version/1/landscapes/all/items.xml";
+      var xmlURL = "http://spongecell.com/campaigns/3829/signal_processors/6/version/1/landscapes/all/items.xml";
+      //var xmlURL = "http://base10creations.com/proofs/spongecell/carousel.xml";
+      xmlhttp.open("GET", xmlURL, false);
+      xmlhttp.send();
+      var xmlDoc = xmlhttp.responseXML;
+    }
     
-    var carousel = new Carousel();
-    carousel.init();
+    xmlParser();
   </script>
 </body>
 </html>
