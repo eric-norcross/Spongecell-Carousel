@@ -65,10 +65,10 @@ function Carousel() {
 
   //Use pre-populated array for local dev. Non-local dev will overwrite _items.
   var _items          = [
-      {id:1, layout:1, track:1, title:"Title 1", link:"http://www.spongecell.com?link=[clickTag1]", image:"images/1.jpg", thumbnail:"images/thumbs/1.jpg", tip:"Tool Tip Text 1", tipLink:"[clickTag1]", dynamicText1:"Text 1", buttonOne:"[clickTag1]"},
-      {id:2, layout:2, track:2, title:"Title 2", link:"http://www.spongecell.com?link=[clickTag2]", image:"images/2.jpg", thumbnail:"images/thumbs/2.jpg", tip:"Tool Tip Text 2", tipLink:"[clickTag2]", dynamicText1:"Text 2", buttonOne:"[clickTag2]"},
-      {id:3, layout:3, track:3, title:"Title 3", link:"http://www.spongecell.com?link=[clickTag3]", image:"images/3.jpg", thumbnail:"images/thumbs/3.jpg", tip:"Tool Tip Text 3", tipLink:"[clickTag3]", dynamicText1:"Text 3", buttonOne:"[clickTag3]"},
-      {id:4, layout:4, track:4, title:"Title 4", link:"http://www.spongecell.com?link=[clickTag4]", image:"images/4.jpg", thumbnail:"images/thumbs/4.jpg", tip:"Tool Tip Text 4", tipLink:"[clickTag4]", dynamicText1:"Text 4", buttonOne:"[clickTag4]"}
+      {id:1, layout:1, track:1, title:"Title 1", link:"http://www.spongecell.com?link=[clickTag1]", image:"assets/images/1.jpg", thumbnail:"assets/images/thumbs/1.jpg", tip:"Tool Tip Text 1", tipLink:"[clickTag1]", dynamicText1:"Text 1", buttonOne:"[clickTag1]"},
+      {id:2, layout:2, track:2, title:"Title 2", link:"http://www.spongecell.com?link=[clickTag2]", image:"assets/images/2.jpg", thumbnail:"assets/images/thumbs/2.jpg", tip:"Tool Tip Text 2", tipLink:"[clickTag2]", dynamicText1:"Text 2", buttonOne:"[clickTag2]"},
+      {id:3, layout:3, track:3, title:"Title 3", link:"http://www.spongecell.com?link=[clickTag3]", image:"assets/images/3.jpg", thumbnail:"assets/images/thumbs/3.jpg", tip:"Tool Tip Text 3", tipLink:"[clickTag3]", dynamicText1:"Text 3", buttonOne:"[clickTag3]"},
+      {id:4, layout:4, track:4, title:"Title 4", link:"http://www.spongecell.com?link=[clickTag4]", image:"assets/images/4.jpg", thumbnail:"assets/images/thumbs/4.jpg", tip:"Tool Tip Text 4", tipLink:"[clickTag4]", dynamicText1:"Text 4", buttonOne:"[clickTag4]"}
   ];
   
   
